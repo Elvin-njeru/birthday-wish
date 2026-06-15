@@ -1,28 +1,22 @@
 import { Metadata } from 'next';
-import { redirect } from 'next/navigation';
-import { getUserData } from '@/actions/getUserData';
 import HappyBirthday from './HappyBirthday';
 
 export const metadata: Metadata = {
-  title: 'Happy Birthday! 🎉',
-  description: 'It\'s time to celebrate! Enjoy special birthday animations, fireworks, and joyful moments on your special day.',
+  title: 'Happy 20th Birthday Twila! 🎉',
+  description: 'It\'s time to celebrate!',
   openGraph: {
-    title: 'Happy Birthday! 🎉',
+    title: 'Happy 20th Birthday Twila! 🎉',
     description: 'Celebrate your special day with fun and excitement!',
     type: 'website',
   },
 };
 
-export default async function CelebratePage() {
-  const userData = await getUserData();
-  
-  if (!userData) {
-    redirect('/');
-  }
-
+export default function CelebratePage() {
+  // We have removed the 'getUserData()' check and the redirect.
+  // It will now load instantly and permanently display her name.
   return (
     <HappyBirthday 
-      personName="TWILAAAAAAAA"
+      personName="Twila"
     />
   );
 }
