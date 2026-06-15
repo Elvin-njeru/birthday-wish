@@ -39,7 +39,7 @@ const HappyBirthday: React.FC<HappyBirthdayProps> = ({ personName }) => {
 
   // Preload audio file on component mount
   useEffect(() => {
-    const audio = new Audio('/y2mate.is - HAPPY BIRTHDAY INSTRUMENTAL-57jZJ2QpKRg-192k-1703434765.mp3');
+    const audio = new Audio('/Glass Animals - Heat Waves (Official Video) - GlassAnimalsVEVO.mp3');
     audio.loop = true;
     audio.preload = 'auto';
     audio.load();
