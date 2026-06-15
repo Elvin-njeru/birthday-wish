@@ -260,7 +260,7 @@ const VirtualCake: React.FC<VirtualCakeProps> = ({ onAllCandlesBlown, age }) => 
               animate={{ scale: 1 }}
               className="text-2xl md:text-4xl lg:text-6xl font-bold text-white text-center px-4"
             >
-              🎉 Your wish came true! 🎉
+              🎉 Your wish came true and may never grow taller! 🎉
             </motion.h2>
           </motion.div>
         )}

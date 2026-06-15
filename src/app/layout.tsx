@@ -10,15 +10,14 @@ export const metadata: Metadata = {
   applicationName: "Birthday wish",
   authors: [
     {
-      name: "Shawkat Hossain Maruf",
-      url: "https://shawkath646.pro"
+      name: "Elvin Murithi Njeru"
     }
   ],
   title: {
-    default: "Happy Birthday",
+    default: "Happy Birthday Twilaaaaaa",
     template: "%s | Happy Birthday"
   },
-  description: "Designed with love, this website allows you to send heartfelt wishes to your favorite people seamlessly and from anywhere. Packed with a plethora of animations, the site is not just visually stunning but also well-organized and responsive across all devices. Celebrate special moments with us, bringing joy to loved ones no matter where they are.",
+  description: "Designed with love, I got confused what i will do for your brithday then thought of thiss... if you have reached the end it means it has not broke ",
   category: "website",
   icons: ["/favicon.ico"],
   publisher: "CloudBurst Lab",

@@ -42,7 +42,7 @@ export default async function MessagesPage() {
 
   return (
     <Message
-      age={age}
+      age="20"
       cards={displayCards}
     />
   );

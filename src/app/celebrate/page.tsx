@@ -22,7 +22,7 @@ export default async function CelebratePage() {
 
   return (
     <HappyBirthday 
-      personName={userData.personName}
+      personName="TWILAAAAAAAA"
     />
   );
 }
