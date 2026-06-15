@@ -1,10 +1,6 @@
 import { Metadata } from 'next';
-import { redirect } from 'next/navigation';
-import { getUserData } from '@/actions/getUserData';
-import { CardData } from '@/lib/cloudburstApi';
 import Message from './Message';
 import { defaultCards } from '@/app/page';
-import { getApplicationDataById } from '@/actions/cloudburstStorage';
 
 export const metadata: Metadata = {
   title: 'Birthday Messages & Cards',
@@ -16,33 +12,15 @@ export const metadata: Metadata = {
   },
 };
 
-export default async function MessagesPage() {
-  const userData = await getUserData();
+export default function MessagesPage() {
+  // We removed the security check and hardcoded her age to 20
+  const age = 20;
 
-  if (!userData) {
-    redirect('/');
-  }
-
-  const dob = new Date(userData.dateOfBirth);
-  const today = new Date();
-  let age = today.getFullYear() - dob.getFullYear();
-  if (today.getMonth() < dob.getMonth() || (today.getMonth() === dob.getMonth() && today.getDate() < dob.getDate())) {
-    age--;
-  }
-
-  let displayCards: CardData[] = defaultCards;
-
-  if (userData.dbId !== "preview") {
-    const fetchedCard = await getApplicationDataById<CardData[]>(userData.dbId, "cards");
-    
-    if (fetchedCard.success && fetchedCard.data && Array.isArray(fetchedCard.data)) {
-      displayCards = fetchedCard.data;
-    }
-  }
+  // We are passing the default beautiful cards into the component
+  const displayCards = defaultCards;
 
   return (
     <Message
-    
       age={age}
       cards={displayCards}
     />
