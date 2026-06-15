@@ -2,11 +2,11 @@ import { Metadata } from 'next';
 import HappyBirthday from './HappyBirthday';
 
 export const metadata: Metadata = {
-  title: 'Happy 20th Birthday Twila! 🎉',
+  title: 'Happy 20th Birthday Twilaaaaaaaa! 🎉',
   description: 'It\'s time to celebrate!',
   openGraph: {
-    title: 'Happy 20th Birthday Twila! 🎉',
-    description: 'Celebrate your special day with fun and excitement!',
+    title: 'Happy 20th Birthday Twilaaaaaaa! 🎉',
+    description: 'Celebrate your special day !',
     type: 'website',
   },
 };
