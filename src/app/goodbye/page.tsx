@@ -5,10 +5,10 @@ import GoodBye from './GoodBye';
 
 export const metadata: Metadata = {
   title: 'See You Again! | Thank You',
-  description: 'Thank you for celebrating this special birthday with us. Your presence made it memorable. See you at the next celebration!',
+  description: 'Thank you for accepting me to be part of your lovely life. Your presence made it memorable. i have enjoyed every fucking second of it !',
   openGraph: {
-    title: 'See You Again!',
-    description: 'Thank you for celebrating with us!',
+    title: 'Age gracefullyy!',
+    description: 'Thank you for being a part of my life!',
     type: 'website',
   },
 };

@@ -30,7 +30,7 @@ const GoodBye: React.FC<GoodByeProps> = ({ personName }) => (
                 transition={{ delay: 0.4, duration: 0.5 }}
                 className="text-lg md:text-xl mb-8"
             >
-                Your presence made it even more special. Let's cherish these memories forever!
+                Your presence made it even more special. I will cherish these memories forever!
             </motion.p>
             <motion.div
                 initial={{ opacity: 0, y: '50px' }}
@@ -57,26 +57,14 @@ const GoodBye: React.FC<GoodByeProps> = ({ personName }) => (
           <div className="mb-2 w-full flex flex-col md:flex-row md:items-center md:justify-center gap-2 md:gap-4">
             <div className="flex flex-col items-center w-full md:w-auto">
               <span>Visit developer</span>
-              <Link
-                href="https://shawkath646.pro"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-blue-500 hover:text-blue-700 font-semibold"
-              >
-                Shawkat Hossain Maruf
-              </Link>
+                Elvin Njeru
             </div>
             <span className="hidden md:inline">|</span>
             <div className="flex flex-col items-center w-full md:w-auto">
               <span>More projects</span>
-              <Link
-                href="https://shawkath646.pro/projects"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-purple-500 hover:text-purple-700 font-semibold"
-              >
+              
                 Portfolio
-              </Link>
+      
             </div>
           </div>
           <div className="mt-2 flex flex-col md:flex-row items-center justify-center gap-2 text-gray-700 dark:text-gray-300 w-full">
